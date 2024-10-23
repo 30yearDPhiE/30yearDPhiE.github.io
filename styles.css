@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+:root {
+    --light: #F9F9F9;
+    --purple: #431F65;
+    --light-purple: #F0E2FF;
+    --gold: #D3A949;
+}
+
+body {
+    font-family: 'Source Serif' !important;
+    background-color: var(--purple);
+
+    background-image: url("images/background.png");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#banner {
+    display: flex;
+    background-color: rgba(67, 31, 101, 0.68);
+}
+
+#mainText {
+    margin: 15px;
+    margin-left: 30px;
+    margin-top: 22px;
+}
+
+#mainName {
+    font-family: 'Great Vibes';
+    color: var(--light);
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 5px;
+}
+
+#subtitle {
+    font-family: 'Roboto Serif';
+    color: var(--light-purple);
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 30px;
+    letter-spacing: 3px;
+    margin-left: 190px;
+    margin-bottom: 0;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+#pin {
+    width: 130px;
+    height: 130px;
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+#navbar {
+    box-shadow: none !important;
+    padding-left: 13px;
+    padding-right: 13px;
+    background-color: var(--light-purple);
+}
+
+#navWrapper {
+    background-color: var(--light-purple);
+}
+
+#navWrapper ul a {
+    color: var(--purple);
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+#line {
+    border-top: 4px solid var(--gold);
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    width: 100%;
+    border-bottom: none;
+}
+
+.pageTitle {
+    text-align: center;
+    color: var(--light-purple);
+    font-size: 47px;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+#pageLine {
+    border: 0.5px solid var(--light-purple);
+    margin-top: 0;
+    width: 80%;
+}
+
+#content {
+    background-color: var(--light-purple);
+    color: var(--purple);
+    margin: 20px 10%;
+    padding: 10px 20px;
+    color: var(--purple);
+}
+
+#contentTitle {
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contentPara {
+    font-size: 18px;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.contentPara a {
+    color: var(--purple);
+}
+
+.itineraryText {
+    font-size: 18px;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.itineraryText a {
+    color: var(--purple);
+}
+
+.break {
+    margin: 40px;
+}
+
+.col {
+    padding-left: 0px !important;
+}
+
+#connect {
+    background-color: var(--light-purple);
+    margin-top: 0;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#connectWithUs {
+    font-size: 38px;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    color: var(--purple);
+    font-weight: 300;
+    margin-right: 40px;
+}
+
+#copywright {
+    background-color: var(--light-purple);
+    color: var(--purple);
+    text-align: center;
+    line-height: 1.75;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+}
