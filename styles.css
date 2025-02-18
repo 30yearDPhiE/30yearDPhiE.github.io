@@ -206,6 +206,11 @@ div .row {
     margin-bottom: 1px;
 }
 
+#hotel {
+    max-width: 30vw;
+    filter: drop-shadow(0px 0px 2px #000000);
+}
+
 @media (max-width: 768px) {
     #content {
         margin: 20px 2%;
@@ -259,5 +264,10 @@ div .row {
 
     #connect {
         padding-right: 8px;
+    }
+
+    #hotel {
+        max-width: 85vw;
+        filter: drop-shadow(0px 0px 2px #000000);
     }
 }
