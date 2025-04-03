@@ -13,6 +13,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
         <script>history.scrollRestoration = "manual"</script>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,69 +51,128 @@
                 <hr id="pageLine">
             </div>   
             <div id="content">
-                <p class="itineraryText">
-                    This website is still under construction. Times/events/venues are subject to change, and any TBD information will be updated shortly! 
-                </p>
-                <div class="break"></div>
-        
-                <h1 id="contentTitle">Friday (4/4/2025)</h1>
-                <div class="row">
-                    <div class="col s12 m5 l2 time">
-                        <p class="itineraryText">8:00pm - 11:00pm</p>
-                    </div>
-                    <div class="col s12 m7 l10 activity">
-                        <p class="itineraryText"><b>Bar Crawl</b> (Locations TBD)</p>
-                    </div>
-                </div>
-                <div class="break"></div>
-        
-                <h1 id="contentTitle">Saturday (4/5/2025)</h1>
-                <div class="row">
-                    <div class="col s12 m5 l2 time">
-                        <p class="itineraryText">10:00am - 12:00pm</p>
-                    </div>
-                    <div class="col s12 m7 l10 activity">
-                        <p class="itineraryText"><b>Family Line Reunion</b> at the Lobozzo Alumni House</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m5 l2 time">
-                        <p class="itineraryText">12:30pm - 2:00pm</p>
-                    </div>
-                    <div class="col s12 m7 l10 activity">
-                        <p class="itineraryText">Optional <b>Tour</b> of RIT and DPhiE House</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m5 l2 time">
-                        <p class="itineraryText">5:00pm - 10:00pm</p>
-                    </div>
-                    <div class="col s12 m7 l10 activity">
-                        <p class="itineraryText"><b>Formal Dinner</b> at La Luna</p>
-                    </div>
-                </div>
-                <div class="break"></div>
-        
-                <h1 id="contentTitle">Sunday (4/6/2025)</h1>
-                <div class="row">
-                    <div class="col s12 m5 l2 time">
-                        <p class="itineraryText">10:00am - 12:00pm</p>
-                    </div>
-                    <div class="col s12 m7 l10 activity">
-                        <p class="itineraryText"><b>Brunch</b> at University Gallery</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12 m5 l2 time">
-                        <p class="itineraryText">12:30pm - 2:00pm</p>
-                    </div>
-                    <div class="col s12 m7 l10 activity">
-                        <p class="itineraryText"><b>Reunion Ceremony</b> at University Gallery</p>
-                    </div>
-                </div>
-                <div class="break"></div>
-                <p class="itineraryText"><i><b>Add this event to your <a href="https://calendar.google.com/calendar/u/2?cid=Y19jYWIwYTQyYmVjN2RlZTU0ZGIyNjc5NTVmMjgzZGRlZTY1NjkzNTBiMDZmNDAzODU2YTgzM2RhNDkzNGNiZDc0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank"><u>Google Calendar</u></a></b></i></p>
+    <p class="itineraryText">
+        This website is still under construction. Times/events/venues are subject to change, and any TBD information will be updated shortly!
+    </p>
+    <div class="break"></div>
+
+    <h1 id="contentTitle">Friday (4/4/2025)</h1>
+    <div class="row event">
+        <div class="col s12 m5 l2 time" onclick="toggleDescription(this)">
+            <p class="itineraryText">
+                <i class="material-icons tiny chevron">chevron_right</i>
+                8:00pm - 11:00pm
+            </p>
+        </div>
+        <div class="col s12 m7 l10 activity">
+            <p class="itineraryText"><b>Bar Crawl</b> (Locations TBD)</p>
+            <div class="event-description" style="display: none;">
+                Enjoy a night with all sisters 21+ on the town in our very own Downtown Rochester, featuring some of our favorite spots! As a note, all beverages are at your own cost directly to the venues.
             </div>
+        </div>
+    </div>
+    <div class="break"></div>
+
+    <h1 id="contentTitle">Saturday (4/5/2025)</h1>
+    <div class="row event">
+        <div class="col s12 m5 l2 time" onclick="toggleDescription(this)">
+            <p class="itineraryText">
+                <i class="material-icons tiny chevron">chevron_right</i>
+                10:00am - 12:00pm
+            </p>
+        </div>
+        <div class="col s12 m7 l10 activity">
+            <p class="itineraryText"><b>Family Line Reunion</b> at the Lobozzo Alumni House</p>
+            <div class="event-description" style="display: none;">
+                Get the family back together to reminisce in the memories of DPhiE across generations! Come ready to take some awesome pictures to see how your family has grown. We will start off as a whole group and then split off into different rooms for families to have privacy. Snacks and a Soda Bar will be provided!
+            </div>
+        </div>
+    </div>
+
+    <div class="row event">
+        <div class="col s12 m5 l2 time" onclick="toggleDescription(this)">
+            <p class="itineraryText">
+                <i class="material-icons tiny chevron">chevron_right</i>
+                12:30pm - 2:00pm
+            </p>
+        </div>
+        <div class="col s12 m7 l10 activity">
+            <p class="itineraryText">Optional <b>Tour</b> of RIT and DPhiE House</p>
+            <div class="event-description" style="display: none;">
+                Have you seen how campus and our house have evolved over the last 10 years? Some campus trivia and adventures to come!
+            </div>
+        </div>
+    </div>
+
+    <div class="row event">
+        <div class="col s12 m5 l2 time" onclick="toggleDescription(this)">
+            <p class="itineraryText">
+                <i class="material-icons tiny chevron">chevron_right</i>
+                5:00pm - 10:00pm
+            </p>
+        </div>
+        <div class="col s12 m7 l10 activity">
+            <p class="itineraryText"><b>Formal Dinner</b> at La Luna</p>
+            <div class="event-description" style="display: none;">
+                A formal evening of celebration, featuring inspiring speeches, a tasty dinner, and a night of dancing that’s sure to bring back some of our best memories. We’ll also honor our cherished traditions, making it a truly meaningful experience!
+            </div>
+        </div>
+    </div>
+
+    <div class="break"></div>
+
+    <h1 id="contentTitle">Sunday (4/6/2025)</h1>
+    <div class="row event">
+        <div class="col s12 m5 l2 time" onclick="toggleDescription(this)">
+            <p class="itineraryText">
+                <i class="material-icons tiny chevron">chevron_right</i>
+                10:00am - 12:00pm
+            </p>
+        </div>
+        <div class="col s12 m7 l10 activity">
+            <p class="itineraryText"><b>Brunch</b> at University Gallery</p>
+            <div class="event-description" style="display: none;">
+                After a night of laughs and inspiration, join us for some self care, midmorning delights, and reminisce the celebrations of the weekend by adding to our scrapbook!
+            </div>
+        </div>
+    </div>
+
+    <div class="row event">
+        <div class="col s12 m5 l2 time" onclick="toggleDescription(this)">
+            <p class="itineraryText">
+                <i class="material-icons tiny chevron">chevron_right</i>
+                12:30pm - 2:00pm
+            </p>
+        </div>
+        <div class="col s12 m7 l10 activity">
+            <p class="itineraryText"><b>Reunion Ceremony</b> at University Gallery</p>
+            <div class="event-description" style="display: none;">
+                Join us as we close out the weekend with a special event to commemorate our chapter's achievements and reflect on our progress over the years. As a gentle reminder, this event is sisters only and ritual attire is required (formal black business dress attire with pins).
+            </div>
+        </div>
+    </div>
+
+    <div class="break"></div>
+
+    <p class="itineraryText"><i><b>Add this event to your <a href="https://calendar.google.com/calendar/u/2?cid=Y19jYWIwYTQyYmVjN2RlZTU0ZGIyNjc5NTVmMjgzZGRlZTY1NjkzNTBiMDZmNDAzODU2YTgzM2RhNDkzNGNiZDc0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank"><u>Google Calendar</u></a></b></i></p>
+</div>
+
+<!-- Script to toggle descriptions -->
+<script>
+    function toggleDescription(el) {
+        const chevron = el.querySelector(".chevron");
+        const activity = el.nextElementSibling;
+        const description = activity.querySelector(".event-description");
+
+        if (description.style.display === "none") {
+            description.style.display = "block";
+            chevron.textContent = "expand_more";
+        } else {
+            description.style.display = "none";
+            chevron.textContent = "chevron_right";
+        }
+    }
+</script>
         </div>
              
 
