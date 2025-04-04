@@ -342,6 +342,32 @@ hr {
     font-style: italic;
 }
 
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px; /* optional: rounded corners */
+  }
+  
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-desktop {
+    display: block;
+}
+
+.map-mobile {
+    display: none;
+}
+  
+
 @media (max-width: 768px) {
     #content {
         margin: 20px 2%;
@@ -400,5 +426,26 @@ hr {
     #hotel {
         max-width: 85vw;
         filter: drop-shadow(0px 0px 2px #000000);
+    }
+
+    .map-desktop {
+        display: none !important;
+    }
+
+    .map-mobile {
+        display: block;
+        text-align: left;
+        margin: 1em 0;
+    }
+
+    .map-link {
+        display: inline-block;
+        background-color: #FFFFFF;
+        color: var(--purple);
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 }
